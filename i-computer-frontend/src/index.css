@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@theme{
+    --color-primary: #ECE7D1;
+    --color-secondary: #060606;
+    --color-accent: #2c4d5f;
+}
+
+@tailwind utilities;
+
+/* Custom Scrollbar */
+@layer utilities {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:transparent; /* slate-900 */
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  #31045b;
+    border-radius: 9999px;
+  }
+
+
+  }
+
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #040914;
+}
